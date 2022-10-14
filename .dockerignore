@@ -1,0 +1,5 @@
+.dockerignore
+.idea
+docker-compose.yml
+起動手順.txt
+Dockerfile

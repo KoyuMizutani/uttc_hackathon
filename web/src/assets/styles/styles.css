@@ -1,0 +1,119 @@
+/* header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+} */
+
+/* Home */
+.homeContents {
+  text-align: center;
+  height: 1400px;
+  background-color:rgb(108, 142, 253);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.title {
+  font-size: 80px;
+  color:aliceblue;
+  padding-top: 150px;
+	text-align:center;
+	line-height:1.5em;
+	font-weight:bold;
+	color:#FFF;
+	/* -webkit-box-reflect: below 0 -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, .1)), to(transparent)); */
+}
+
+.homeContents h3 {
+  color:aliceblue;
+}
+
+.accounts {
+  list-style: none; 
+}
+
+/* MenuBar */
+.MenuBar {
+  width: 100%;
+  z-index: 999;
+  position: fixed;
+}
+
+.headerMenu h2 {
+  float: left;
+  padding: 0px 0px 0px 10px;
+}
+.headerMenu h4 {
+  float: left;
+  padding: 0px 0px 0px 100px;
+}
+
+.controll {
+  float: right;
+  margin: 13px 30px 0px 0px;
+}
+
+/* Chat */
+main {
+  padding: 40px 0px 0px 15px;
+}
+
+.channel {
+  margin-top: 40px;
+}
+
+/* Thread */
+.thread {
+  list-style: none;
+  margin-bottom: 250px;
+}
+
+.thread li {
+  margin: 30px 0px 10px 0px;
+  width: 100%;
+}
+
+.senderName {
+  font-size: 17px;
+  margin: 9px 0px 0px 8px;
+  font-weight: bold;
+}
+
+.sendDate {
+  font-size: 7px;
+  margin: 17px 0px 0px 8px;
+}
+
+.alreadyEdited {
+  font-size: 1px;
+  opacity: 0.5;
+  margin: 15px 0px 0px 4px;
+}
+
+.thread h5 {
+  display: inline-block; 
+}
+
+.messageInfo {
+  display: flex;
+}
+
+.messageContents {
+  margin-left: 30px;
+  font-size: 22px;
+}
+
+.messageMenu {
+  margin: 11px 0px 0px 15px;
+}
+
+/* SideMenuBar */
+.sideMenuBarTitle {
+  margin-left: 15px;
+}

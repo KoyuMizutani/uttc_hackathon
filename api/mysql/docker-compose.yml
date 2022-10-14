@@ -1,0 +1,24 @@
+version: "3.8"
+
+services:
+  db:
+    container_name: db
+    build:
+      context: .
+      dockerfile: Dockerfile
+    platform: linux/x86_64
+    tty: true
+    env_file: .env_mysql
+    ports:
+      - 3306:3306
+    volumes:
+      - type: volume
+        source: mysql-data
+        target: /var/lib/mysql
+      - type: bind
+        source: ./init
+        target: /docker-entrypoint-initdb.d
+
+volumes:
+  mysql-data:
+    name: mysql-volume
