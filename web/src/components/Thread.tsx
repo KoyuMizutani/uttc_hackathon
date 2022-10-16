@@ -105,7 +105,7 @@ const Thread = (props: Props) => {
                <Paper sx={{ position: 'fixed', bottom: 0, left: 0, right: 0, height: 80, textAlign: 'center'}} elevation={15}>
                   <form onSubmit={sendHandle}>
                      <TextField sx={{ mt:1.6, width:650 }} label="Messages" value={text} onChange={(event)=>{setText(event.target.value)}} />
-                     <Button sx={{mt:2.7, ml:1.5}} type="submit" variant="contained" endIcon={<SendIcon />}>
+                     <Button disabled={text.length == 0} sx={{mt:2.7, ml:1.5}} type="submit" variant="contained" endIcon={<SendIcon />}>
                         Send
                      </Button>
                   </form>
